@@ -65,6 +65,17 @@
 
 
 
-// and you have to remember the layout is always keep his state its mean if you have a counter and increase it in layout it will keep it value in all pages not like
+//! and you have to remember the layout is always keep his state its mean if you have a leaf componnet that is a counter and increase it in layout it will keep it value in all pages 
+//? what happend if we want to reset state when page get change like reset counter or something :
+//*  for that issue you can use tamplate.js its just like layout.js but its state will reset when route change
+
+
+
+
+
+
+//? you can handle error in client using error.js 
+//! error.js is must to be a client componnet // so dont forget the 'use client' 
+//* there is another prop that error.js get  and it is reset : its a function and you call it to reset component or page that trow error
 
 

@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Products from "@/components/Products";
 import Users from "@/components/Users";
 import Link from "next/link";
-
+import './globals.css'
 export default async function RootLayout({ children }) {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await res.json();
