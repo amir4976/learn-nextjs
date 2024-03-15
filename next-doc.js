@@ -2,6 +2,9 @@
 //so you have to replace index.js wite page.js thats better 
 // you can have dynmic route and nested route and you can groupe it with '(...)' somting like this 
 
+const { Suspense } = require("react");
+const { default: RootLayout } = require("./app/layout");
+
 
 // ok you can create slug just like the next 12 and there is no diffrent between them you can do like rest of slugs with [...somthing] this mean that the rest of them
 // you can create slug with any name
@@ -77,5 +80,22 @@
 //? you can handle error in client using error.js 
 //! error.js is must to be a client componnet // so dont forget the 'use client' 
 //* there is another prop that error.js get  and it is reset : its a function and you call it to reset component or page that trow error
+
+
+// well error.js is only handle error in page.js look at this template:
+
+//? <RootLayout>                                                                               |   so how we handle error of this area
+//    <RootTemplate>                                                                           |
+//!        <RootErrorHandler>                        |  its only handle error in this erea     |                                    
+//            <Suspense fallback={<Loading />}>      |                                         |
+//                <PageRoute></PageRoute>            |                                         |
+//            </Suspense>                            |                                         |
+//!        </RootErrorHandler>                       |                                         |
+//   </RootTemplate>                                                                           |
+//? </RootLayout>                                                                              |
+
+// we use global-error.js to handle errors globally its just like error.js but handle globaly
+
+
 
 
