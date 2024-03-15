@@ -65,4 +65,6 @@
 
 
 
+// and you have to remember the layout is always keep his state its mean if you have a counter and increase it in layout it will keep it value in all pages not like
+
 
