@@ -113,4 +113,13 @@ const { getStaticPaths } = require("next/dist/build/templates/pages");
 //* --------------------------------API------------------------------------
 
 
+//^ ok you can create an api using api folder and file key name is route.js
+//? every folder you want to create in api folder must to be route.js
 
+// in that you can create and export a function name of your method 
+// if you want to create an api to get data from it you use it like this
+// export function GET /POST /PUT /DELETE /PATCH /OPTIONS/ ...
+//? and the function must to return an object like this return Responce.json({'massage':'name'})
+
+
+//? you can use POST(req) to get data from body
