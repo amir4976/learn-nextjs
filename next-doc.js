@@ -4,6 +4,7 @@
 
 const { Suspense } = require("react");
 const { default: RootLayout } = require("./app/layout");
+const { getStaticPaths } = require("next/dist/build/templates/pages");
 
 
 // ok you can create slug just like the next 12 and there is no diffrent between them you can do like rest of slugs with [...somthing] this mean that the rest of them
@@ -96,6 +97,20 @@ const { default: RootLayout } = require("./app/layout");
 
 // we use global-error.js to handle errors globally its just like error.js but handle globaly
 
+
+
+//& getStaticPaths in next 13
+//?  genrate static props is like getStaticPath 
+//*  we use to get page id before we render the page
+//!  its use in static page 
+// please check app/users/[id]/page.js
+// it have to return an array { id: user.id }
+
+
+
+
+
+//* --------------------------------API------------------------------------
 
 
 
