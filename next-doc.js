@@ -123,3 +123,36 @@ const { getStaticPaths } = require("next/dist/build/templates/pages");
 
 
 //? you can use POST(req) to get data from body
+
+
+
+//*dynamic params in api
+// you can create adynamic api by create a folder like this [slug] and file name is route.js
+//? you can use GET(req,{params}) to get access to params something like id and such as
+
+
+
+
+//* search params in api
+//? you can use two way to get search params from request first one 
+// is              const {searchParams} = new URL(req.url);        
+// and sacond is   const searchParams = req.nextUrl.searchParams; 
+// and you can get the params like this searchParams.get('name of search params')
+
+
+
+//* cookies 
+//& return Response.json({
+//&     message: reqBody
+//& },{
+//&     status: 201,
+//?     headers: {
+//?         'Set-Cookie': 'token=123; Max-Age=60'
+//?     },
+//?     httpOnly: true
+//& })
+
+// you can create cookie in client like this 
+//? and you can get cookie just like this req.cookies.get(name of cookie)
+      
+
